@@ -1,0 +1,38 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    
+}
+.container h2{
+    background: linear-gradient(to right , rgb(37, 172, 37) , rgb(214, 177, 11) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container h1::before {
+    content: '';
+    width: 16%;
+    height: 15px;
+    background-color: rgb(255, 196, 0);
+    position: absolute;
+    bottom: 0%;
+    z-index: -1;
+    transition: all 3s;
+    
+}
+
+.container h1:hover  {
+    height: 30px;
+    top: 10%;
+    
+}
+
+ .container hr{
+    border-top: 2px dotted black;
+}
+
+button {
+    background-color: brown ;
+}

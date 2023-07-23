@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@100&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    <h1 class="text-center mt-5  position-relative">Bookmarker</h1>
+    <hr>
+    <header class="d-flex justify-content-center align-items-center">
+    <i class="fa-solid fa-bookmark fs-4 mx-2" style="color: rgb(0, 158, 92);"    ></i>
+    <h2>Bookmark your favorite sites</h2>
+    <i class="fa-solid fa-bookmark fs-4 mx-2" style="color: chocolate;"></i>
+    </header>
+    <div class="form-group d-flex flex-column justify-content-center gap-2">
+    <div class="form-group">
+        <label for="siteName"><i class="fa-solid fa-book-bookmark mb-2 fw-bold" ></i> Site Name</label>
+        <input type="text" id="siteName" placeholder="Bookmark Name" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="siteUrl"><i class="fa-solid fa-link mb-2" ></i> Site URL</label>
+        <input type="text" id="siteUrl" placeholder="website URL" oninput="validateUrl()" class="form-control">
+    </div>
+    <button class="btn btn-success  mt-3 px-5 mx-auto" onclick="submitSite()">Submit</button>
+    </div>
+    <table class="text-center table mt-3">
+        <hr>
+        <thead>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="displayData">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
